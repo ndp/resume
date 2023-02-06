@@ -1,0 +1,198 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: calc(100vw/50);
+    font-family: Lora;
+    --darker: #222601;
+    --darkest: #565902;
+    --dark: #0D0259;
+    --accent: #0367A6;
+    --river: #72C1F2;
+    --riverside: #a6ddff;
+    --land: #caeaff;
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+#page,
+#page-background {
+    width: 100vw;
+    height: calc(100vw * 11/8.5);
+}
+
+#page {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1.5rem 2rem 2rem 2rem;
+    overflow: hidden;
+}
+
+#page-background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+#page-background svg {
+    width: 100vw;
+    height: calc(100vw * 11/8.5);
+}
+
+header>* {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+header h1 {
+    color: var(--darkest);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    /* background-color: red; */
+}
+
+header h2 {
+    padding-left: .1rem;
+    letter-spacing: -.05rem;
+    /* opacity: 0.5; */
+    font-weight: 400;
+    font-style: italic;
+    color: var(--dark);
+}
+
+#contact {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#contact li {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0rem;
+    margin-right: 1em;
+}
+
+#contact li a {
+    text-decoration: none;
+    color: var(--darkest)
+}
+
+#contact li a svg {
+    height: 1.4rem;
+    width: 1.5rem;
+    position: relative;
+    top: .3em;
+    margin-right: -0.0rem;
+    stroke: var(--accent);
+    fill: var(--accent);
+}
+
+#summary {
+    font-size: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+    font-style: italic;
+}
+
+.activities {
+    position: relative;
+    display: grid;
+}
+
+.activities li {
+    position: relative;
+    display: block;
+    min-height: 4rem;
+}
+
+.activities li * {
+    display: none;
+}
+
+.activities li h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.activities li h3 {
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    width: 32vw;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    display: inline-block;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.activities li h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    color: var(--dark);
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    height: 2rem;
+    font-size: 1.5rem;
+    color: var(--dark);
+    opacity: .3;
+    text-transform: uppercase;
+    letter-spacing: .55rem;
+}
+
+#skills {
+    position: absolute;
+    right: 0;
+    width: 20vw;
+    margin-right: 4vw
+}
+
+#skills li {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 1.5rem;
+    color: var(--darker)
+}
+
+
+/*
+
+<div class="custom-shape-divider-top-1675658516">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+
+.custom-shape-divider-top-1675658516 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+*/
