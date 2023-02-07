@@ -5,15 +5,15 @@ body {
     font-size: calc(100vw/50);
     font-family: Lora, serif;
     /* background */
-    --river: #9bc8e4;
-    --riverside: #c0c9ac;
-    --land: #bcd28d;
+    --river: #8bbeea;
+    --riverside: #d5dcf2;
+    --land: #e49465;
     /* text */
-    --header: #618C03;
-    --header-alt: #365902;
-    --header-alt2: #0D0D0D;
-    --text: #0D0D0D;
-    --text-alt: #365902;
+    --header: white;
+    --header-alt: #401D09;
+    --header-alt2: #401D09;
+    --text: #401D09;
+    --text-alt: #A64B17;
 }
 
 ul,
@@ -112,7 +112,7 @@ header h2 {
 .activities li {
     position: relative;
     display: block;
-    min-height: 4rem;
+    min-height: 4.2rem;
 }
 
 .activities li * {
@@ -131,8 +131,8 @@ header h2 {
 .activities li h3 {
     position: absolute;
     top: 0;
-    left: 30vw;
-    width: 32vw;
+    left: 26vw;
+    width: 35vw;
     padding: 0;
     margin: 0;
     font-size: 1rem;
@@ -165,7 +165,7 @@ h6 {
 #skills {
     position: absolute;
     right: 0;
-    width: 20vw;
+    width: 22vw;
     margin-right: 4vw
 }
 
@@ -174,8 +174,8 @@ h6 {
     font-size: 1rem;
     font-style: italic;
     font-weight: 200;
-    line-height: 1.5rem;
-    color: var(--text-alt)
+    line-height: 1.4rem;
+    color: var(--text-alt);
 }
 
 
