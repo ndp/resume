@@ -5,15 +5,15 @@ body {
     font-size: calc(100vw/50);
     font-family: Lora, serif;
     /* background */
-    --river: #6bb2de;
-    --riverside: #aeaf93;
-    --land: #739a7b;
+    --river: #addefc;
+    --riverside: #eee;
+    --land: #ddd;
     /* text */
-    --header: #0D0259;
-    --header-alt: #222601;
-    --header-alt2: #222601;
-    --text: #222601;
-    --text-alt: #565902;
+    --header: #591202;
+    --header-alt: #2A2640;
+    --header-alt2: #A62103;
+    --text: #2A2640;
+    --text-alt: #30400D;
 }
 
 ul,
