@@ -14,6 +14,8 @@ body {
     --header-alt2: #401D09;
     --text: #401D09;
     --text-alt: #A64B17;
+    --grid-y: 1.4rem;
+    --rule: .01rem solid #401D09
 }
 
 ul,
@@ -33,7 +35,7 @@ li {
     display: block;
     box-sizing: border-box;
     margin: 0;
-    padding: 1.5rem 2rem 2rem 2rem;
+    padding: 3rem 2rem;
     overflow: hidden;
 }
 
@@ -51,7 +53,7 @@ li {
 header>* {
     margin: 0;
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 header h1 {
@@ -64,15 +66,17 @@ header h1 {
 header h2 {
     padding-left: .1rem;
     letter-spacing: -.05rem;
-    font-weight: 400;
+    font-weight: 200;
     font-style: italic;
     color: var(--header-alt);
 }
 
 #contact {
+    margin: .5rem 0 -.5rem 0;
+    padding: .3rem .1rem .5rem .2rem;
+    border-top: var(--rule);
+    border-bottom: var(--rule);
     display: block;
-    margin: 0;
-    padding: 0;
 }
 
 #contact li {
@@ -90,7 +94,7 @@ header h2 {
 }
 
 #contact li a svg {
-    height: 1.4rem;
+    height: var(--grid-y);
     width: 1.5rem;
     position: relative;
     top: .3em;
@@ -100,9 +104,11 @@ header h2 {
 
 #summary {
     font-size: 1rem;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: var(--grid-y) 1rem 2rem 1rem;
     font-style: italic;
     color: var(--text);
+    /* padding-left: 6rem; */
+    /* padding-right: 6rem; */
 }
 
 .activities {
@@ -112,7 +118,7 @@ header h2 {
 .activities li {
     position: relative;
     display: block;
-    min-height: 4.2rem;
+    min-height: calc(3 * var(--grid-y));
 }
 
 .activities li * {
@@ -154,7 +160,8 @@ header h2 {
 h6 {
     margin: 0;
     padding: 0;
-    height: 2rem;
+    height: var(--grid-y);
+    transform: translate(0, -.5rem);
     font-size: 1rem;
     color: var(--header);
     text-transform: uppercase;
@@ -174,27 +181,6 @@ h6 {
     font-size: 1rem;
     font-style: italic;
     font-weight: 200;
-    line-height: 1.4rem;
+    line-height: var(--grid-y);
     color: var(--text-alt);
 }
-
-
-/*
-
-<div class="custom-shape-divider-top-1675658516">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div>
-
-
-.custom-shape-divider-top-1675658516 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-*/
