@@ -3,14 +3,17 @@ body {
     margin: 0;
     padding: 0;
     font-size: calc(100vw/50);
-    font-family: Lora;
-    --darker: #222601;
-    --darkest: #565902;
-    --dark: #0D0259;
-    --accent: #0367A6;
-    --river: #72C1F2;
-    --riverside: #a6ddff;
-    --land: #caeaff;
+    font-family: Lora, serif;
+    /* background */
+    --river: #6bb2de;
+    --riverside: #aeaf93;
+    --land: #739a7b;
+    /* text */
+    --header: #0D0259;
+    --header-alt: #222601;
+    --header-alt2: #222601;
+    --text: #222601;
+    --text-alt: #565902;
 }
 
 ul,
@@ -52,20 +55,18 @@ header>* {
 }
 
 header h1 {
-    color: var(--darkest);
+    color: var(--header);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: .05rem;
-    /* background-color: red; */
 }
 
 header h2 {
     padding-left: .1rem;
     letter-spacing: -.05rem;
-    /* opacity: 0.5; */
     font-weight: 400;
     font-style: italic;
-    color: var(--dark);
+    color: var(--header-alt);
 }
 
 #contact {
@@ -85,7 +86,7 @@ header h2 {
 
 #contact li a {
     text-decoration: none;
-    color: var(--darkest)
+    color: var(--header-alt2)
 }
 
 #contact li a svg {
@@ -94,19 +95,18 @@ header h2 {
     position: relative;
     top: .3em;
     margin-right: -0.0rem;
-    stroke: var(--accent);
-    fill: var(--accent);
+    fill: var(--header-alt2);
 }
 
 #summary {
     font-size: 1rem;
     padding: 2rem 1rem 2rem 1rem;
     font-style: italic;
+    color: var(--text);
 }
 
 .activities {
     position: relative;
-    display: grid;
 }
 
 .activities li {
@@ -120,11 +120,12 @@ header h2 {
 }
 
 .activities li h2 {
+    display: inline-block;
     padding: 0;
     margin: 0;
     font-size: 1rem;
-    display: inline-block;
     font-weight: 800;
+    color: var(--text);
 }
 
 .activities li h3 {
@@ -138,26 +139,27 @@ header h2 {
     display: inline-block;
     font-style: italic;
     font-weight: 400;
+    color: var(--text);
 }
 
 .activities li h4 {
     padding: 0;
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: block;
     font-family: 'Nunito', sans-serif;
-    color: var(--dark);
+    color: var(--text);
 }
 
 h6 {
     margin: 0;
     padding: 0;
     height: 2rem;
-    font-size: 1.5rem;
-    color: var(--dark);
-    opacity: .3;
+    font-size: 1rem;
+    color: var(--header);
     text-transform: uppercase;
-    letter-spacing: .55rem;
+    letter-spacing: .7rem;
+    font-weight: 100;
 }
 
 #skills {
@@ -173,7 +175,7 @@ h6 {
     font-style: italic;
     font-weight: 200;
     line-height: 1.5rem;
-    color: var(--darker)
+    color: var(--text-alt)
 }
 
 
