@@ -5,13 +5,13 @@ body {
     font-size: calc(100vw/50);
     font-family: Lora, serif;
     /* background */
-    --river: #8bbeea;
-    --riverside: #d5dcf2;
-    --land: #e49465;
+    --river: #F28F16;
+    --riverside: #d57b0d;
+    --land: #A61103;
     /* text */
     --header: white;
     --header-alt: #401D09;
-    --header-alt2: #401D09;
+    --header-alt2: black;
     --text: #401D09;
     --text-alt: #A64B17;
     --grid-y: 1.4rem;
@@ -73,19 +73,18 @@ header h2 {
 
 #contact {
     margin: .5rem 0 -.5rem 0;
-    padding: .3rem .1rem .5rem .2rem;
+    padding: .3rem .3rem .5rem .2rem;
     border-top: var(--rule);
     border-bottom: var(--rule);
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 #contact li {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'Nunito', sans-serif;
     font-weight: 100;
-    letter-spacing: 0rem;
-    margin-right: 1em;
 }
 
 #contact li a {
