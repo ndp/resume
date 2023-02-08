@@ -1,19 +1,13 @@
+@page {
+    size: 11in 8.5in;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
     font-size: calc(100vw/50);
     font-family: Lora, serif;
-    /* background */
-    --river: #F28F16;
-    --riverside: #d57b0d;
-    --land: #A61103;
-    /* text */
-    --header: white;
-    --header-alt: #401D09;
-    --header-alt2: black;
-    --text: #401D09;
-    --text-alt: #A64B17;
     --grid-y: 1.4rem;
     --rule: .01rem solid #401D09
 }
@@ -50,6 +44,39 @@ li {
     height: calc(100vw * 11/8.5);
 }
 
+#controls {
+    box-sizing: border-box;
+    padding: 1vw 3vw 2vw;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 90vw;
+    left: 5vw;
+    border: 1px solid black;
+    box-shadow: #44444499 1px 1px 2px 1px;
+    background-color: lightgray;
+    z-index: 100;
+    display: grid;
+    grid-template-rows: 2rem 2rem;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+#contols input {}
+
+#controls label {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+@media print {
+    #controls {
+        display: none !important;
+    }
+}
+
 header>* {
     margin: 0;
     display: inline-block;
@@ -68,7 +95,7 @@ header h2 {
     letter-spacing: -.05rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--header-alt);
+    color: var(--tagline);
 }
 
 #contact {
@@ -89,7 +116,7 @@ header h2 {
 
 #contact li a {
     text-decoration: none;
-    color: var(--header-alt2)
+    color: var(--contacts)
 }
 
 #contact li a svg {
@@ -98,7 +125,7 @@ header h2 {
     position: relative;
     top: .3em;
     margin-right: -0.0rem;
-    fill: var(--header-alt2);
+    fill: var(--contacts);
 }
 
 #summary {
@@ -162,7 +189,7 @@ h6 {
     height: var(--grid-y);
     transform: translate(0, -.5rem);
     font-size: 1rem;
-    color: var(--header);
+    color: var(--sections);
     text-transform: uppercase;
     letter-spacing: .7rem;
     font-weight: 100;
@@ -181,5 +208,5 @@ h6 {
     font-style: italic;
     font-weight: 200;
     line-height: var(--grid-y);
-    color: var(--text-alt);
+    color: var(--skills);
 }
