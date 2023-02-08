@@ -1,16 +1,12 @@
-My resume evolved from a typed page to a computerized word document to an XML document with varied XSLT transforms, to the most recent version: a PDF dump of my LinkedIn page. LinkedIn is great and all, but their turning for resume output is anemic. 
+Throughout my life, my resume evolved. From a manually-typed page to a computerized MSWord document,  to an XML document with varied XSLT transforms, to the most recent version (ironic drum roll): a PDF dump of my LinkedIn page. 
 
-I was thinking that flooding people with "everything" might be okay for some subset of the audience (maybe the AI screens?), it didn't really pass the test of quality output.
+LinkedIn is great and all, but their tuning for resume output is anemic. Ideally a resume tool should help create a one-page summary, customized for specific opportunities. (I'm _not_ solving this!) By flooding people with "everything" I was giving people that "I'd done lots of stuff", but it likely wasn't the right answer for most jobs. It was not the quality I usually aim for, and I was letting my occassional scorn for the recruiting process get in my own way. This repo represents an attempt to rectify that.
 
-Despite my occassional scorn for a bit of the "recruiting" process, it makes sense to put together a "good" resume that provides a high-level summary of what I was including with LinkedIn. This repo represents the output of that.
+Technically, I wanted to keep the project as low-tech as possible. I would create a clean HTML document, style it with CSS, and be done. One of my original ideas with an organic-shaped timeline,
+where my experiences were connected via a meandering path,  
+representing my professional journey. The more I developed the idea, the more I realized that the visual design would be a challenging-- too challenging for me to execute gracefully. The meandering shape remains, but I reduced the scope of the idea, and this is a significantly simplified version.
 
-## Context
-
-The goal was to keep the project as low-tech as possible. I would create a clean HTML document, style it with CSS, and be done. One of my original ideas with an organic-shaped timeline,
-where my experiences were connected to a meandering path to 
-represent the journey. The more I developed the idea, the more I realized that it woudl be a challenging visual design project-- one I was not really equiped to execute gracefully, not matter how much I wanted. So I reduced the scope of the idea, and this is a significantly simplified version of that idea, with only the shape remaining.
-
-I was trying lots of color schemes out, and so I decided to make a little interactive tool to let me do this, so there is a little itsy-bitsy bit of Javascript. Don't call me a scope creep.
+In my final polish, I was trying out numerous color schemes, and so I decided to make a little interactive tool to let me do this. So there _is_ a little itsy-bitsy bit of Javascript.
 
 ## Dont Read Me
 
