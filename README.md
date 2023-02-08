@@ -1,14 +1,28 @@
-> When people ask for my resume, I send them a PDF of my linked in profile. How pathetic is that?
+My resume evolved from a typed page to a computerized word document to an XML document with varied XSLT transforms, to the most recent version: a PDF dump of my LinkedIn page. LinkedIn is great and all, but their turning for resume output is anemic. 
 
-Why not make a one page resume with the "highlights"? That's what this is. I had the idea to make an organic shaped timeline, and attach my experiences to it. But that will be quite challenging from a visual design perspective, to fit everything on the page and make it understandable. So this is a significantly simplified version of that idea, with the shape remaining, but little else.
+I was thinking that flooding people with "everything" might be okay for some subset of the audience (maybe the AI screens?), it didn't really pass the test of quality output.
 
-## External references
+Despite my occassional scorn for a bit of the "recruiting" process, it makes sense to put together a "good" resume that provides a high-level summary of what I was including with LinkedIn. This repo represents the output of that.
+
+## Context
+
+The goal was to keep the project as low-tech as possible. I would create a clean HTML document, style it with CSS, and be done. One of my original ideas with an organic-shaped timeline,
+where my experiences were connected to a meandering path to 
+represent the journey. The more I developed the idea, the more I realized that it woudl be a challenging visual design project-- one I was not really equiped to execute gracefully, not matter how much I wanted. So I reduced the scope of the idea, and this is a significantly simplified version of that idea, with only the shape remaining.
+
+I was trying lots of color schemes out, and so I decided to make a little interactive tool to let me do this, so there is a little itsy-bitsy bit of Javascript. Don't call me a scope creep.
+
+## Dont Read Me
+
+Stuff that is not essential, but I stick here for reference.
+
+### External references
 
 I generated the curve at https://app.haikei.app/
 
 I'm using the fonts: Lora + Nunito. Lora is the standard for my web sites, but it is quite heavy in the italic version, so I pulled in Nunito as a secondary font. Suggestion comes from https://www.figma.com/google-fonts/lora-font-pairings/#:~:text=Lora%20is%20a%20well%20balanced,%2C%20Ubuntu%2C%20Alegreya%20and%20Nunito.
 
-## Color Schemes
+### Color Schemes
 
 I added the color schemes to be directly configurable. Interesting ones:
 - [HP Calculator](http://127.0.0.1:3000/#river=#dfc28d;riverside=#d1b071;land=#b8964b;header=#a3110b;tagline=#65461d;contacts=#540203;sections=#a98410;text=#4d2d10;skills=#382417)
