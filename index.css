@@ -3,15 +3,7 @@
 }
 
 html,
-body {
-    margin: 0;
-    padding: 0;
-    font-size: calc(100vw/50);
-    font-family: Lora, serif;
-    --grid-y: 1.4rem;
-    --rule: .01rem solid #401D09
-}
-
+body,
 ul,
 ol,
 li {
@@ -19,16 +11,23 @@ li {
     padding: 0;
 }
 
+html {
+    font-size: calc(100vw/50);
+    font-family: Lora, serif;
+    --grid-y: 1.4rem;
+    /* Vertical rhythm */
+    --rule: .01rem solid #401D09;
+}
+
 #page,
 #page-background {
+    box-sizing: border-box;
     width: 100vw;
     height: calc(100vw * 11/8.5);
 }
 
 #page {
-    display: block;
     box-sizing: border-box;
-    margin: 0;
     padding: 3rem 2rem;
     overflow: hidden;
 }
@@ -44,19 +43,19 @@ li {
     height: calc(100vw * 11/8.5);
 }
 
-#controls {
-    box-sizing: border-box;
-    padding: 1vw 3vw 2vw;
-    display: none;
+#palette {
     position: fixed;
-    bottom: 0;
+    box-sizing: border-box;
+    bottom: 1vw;
     width: 90vw;
     left: 5vw;
-    border: 1px solid black;
+    z-index: 100;
+    padding: 1vw 3vw 2vw;
+    border: 1px solid #aaa;
     box-shadow: #44444499 1px 1px 2px 1px;
     background-color: lightgray;
-    z-index: 100;
     display: grid;
+    display: var(--palette-display);
     grid-template-rows: 2rem 2rem;
     grid-auto-flow: column;
     justify-content: space-evenly;
@@ -64,13 +63,13 @@ li {
     justify-items: center;
 }
 
-#controls label {
+#palette label {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
 }
 
 @media print {
-    #controls {
+    #palette {
         display: none !important;
     }
 }
@@ -131,8 +130,6 @@ header h2 {
     padding: var(--grid-y) 1rem 2rem 1rem;
     font-style: italic;
     color: var(--text);
-    /* padding-left: 6rem; */
-    /* padding-right: 6rem; */
 }
 
 .activities {

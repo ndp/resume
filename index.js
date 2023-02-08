@@ -34,21 +34,21 @@ function setCssVar(lvalue, rvalue) {
 }
 
 window.addEventListener("load", (event) => {
-    const controls = document.getElementById('controls')
+    const palette = document.getElementById('palette')
     const page = document.getElementById('page')
 
     Object.keys(COLORS).forEach((k, i) => {
+
+        const label = document.createElement('label')
+        label.appendChild(document.createTextNode(k))
+        palette.appendChild(label);
 
         const input = document.createElement('input')
         input.value = COLORS[k]
         setCssVar(`--${k}`, input.value)
         input.setAttribute('placeholder', k)
         input.setAttribute('type', 'color')
-        const label = document.createElement('label')
-        label.appendChild(document.createTextNode(k))
-        controls.appendChild(label);
-        controls.appendChild(input);
-
+        palette.appendChild(input);
         input.addEventListener('change', () => {
             setCssVar(`--${k}`, input.value)
             COLORS[k] = input.value
@@ -57,24 +57,31 @@ window.addEventListener("load", (event) => {
 
     })
 
+    // Hide the palete when not "in use", based on a heuristic:
+    // - is the mouse moving?
+    // - is the mouse within the window?
     page.addEventListener('mouseenter', () => controls.style.display = 'grid')
     page.addEventListener('mouseleave', (e) => {
+        // "leaving" might be just go into an element inside the page
+        // If that's the case, don't hide the cursor.
         if (e.clientX > 0 && e.clientX < page.clientWidth &&
             e.clientY > 0 && e.clientY < page.clientHeight)
             return;
-        hideIn(10000)
+        hidePaletteAfter(10000)
     })
     page.addEventListener('mousemove', () => {
-        hideIn(30000)
+        hidePaletteAfter(30000)
     })
 
+    // Utility function to hide the color palette after a certain number
+    // of milliseconds if not called again. 
     let hideTimeout = null
 
-    function hideIn(ms) {
-        controls.style.display = 'grid'
+    function hidePaletteAfter(ms) {
+        setCssVar('--palette-display', 'grid')
         if (hideTimeout) clearTimeout(hideTimeout)
         hideTimeout = setTimeout(() => {
-            controls.style.display = 'none'
+            setCssVar('--palette-display', 'none')
             hideTimeout = null
         }, ms)
     }
