@@ -1,3 +1,5 @@
+(c) Copyright 2023 Andrew J. Peterson. All Rights Reserved.
+
 Throughout my life, my resume evolved. From a manually-typed page to a computerized MSWord document,  to an XML document with varied XSLT transforms, to the most recent version (ironic drum roll): a PDF dump of my LinkedIn page. 
 
 LinkedIn is great and all, but their tuning for resume output is anemic. Ideally a resume tool should help create a one-page summary, customized for specific opportunities. (I'm _not_ solving this!) By flooding people with "everything" I was giving people that "I'd done lots of stuff", but it likely wasn't the right answer for most jobs. It was not the quality I usually aim for, and I was letting my occassional scorn for the recruiting process get in my own way. This repo represents an attempt to rectify that.
@@ -7,6 +9,18 @@ where my experiences were connected via a meandering path,
 representing my professional journey. The more I developed the idea, the more I realized that the visual design would be a challenging-- too challenging for me to execute gracefully. The meandering shape remains, but I reduced the scope of the idea, and this is a significantly simplified version.
 
 In my final polish, I was trying out numerous color schemes, and so I decided to make a little interactive tool to let me do this. So there _is_ a little itsy-bitsy bit of Javascript.
+
+## Usage
+
+Contact me, and I'll send you a PDF!
+
+To see it locally,
+
+1. check out the code
+2. run some sort of local server
+3. look at `index.html`
+4. to make a PDF, just make sure page margins are set to 0, and it should just work.
+
 
 ## Dont Read Me
 
