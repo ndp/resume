@@ -1,5 +1,5 @@
 @page {
-    size: 11in 8.5in;
+    size: 8.5in 11in;
 }
 
 html,
@@ -63,8 +63,6 @@ li {
     align-items: center;
     justify-items: center;
 }
-
-#contols input {}
 
 #controls label {
     font-family: 'Nunito', sans-serif;
