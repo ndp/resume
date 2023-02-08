@@ -66,6 +66,7 @@ html {
 #palette label {
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
+    font-size: 16px;
 }
 
 @media print {
@@ -127,8 +128,8 @@ header h2 {
 
 #summary {
     font-size: 1rem;
-    padding: var(--grid-y) 1rem 2rem 1rem;
     font-style: italic;
+    padding: var(--grid-y) 1rem 2rem 1rem;
     color: var(--text);
 }
 
@@ -156,24 +157,24 @@ header h2 {
 }
 
 .activities li h3 {
-    position: absolute;
+    margin: 0;
+    padding: 0;
     top: 0;
     left: 26vw;
     width: 35vw;
-    padding: 0;
-    margin: 0;
-    font-size: 1rem;
+    position: absolute;
     display: inline-block;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 400;
     color: var(--text);
 }
 
 .activities li h4 {
-    padding: 0;
     margin: 0;
-    font-size: 0.9rem;
+    padding: 0;
     display: block;
+    font-size: 0.9rem;
     font-family: 'Nunito', sans-serif;
     color: var(--text);
 }
@@ -184,10 +185,10 @@ h6 {
     height: var(--grid-y);
     transform: translate(0, -.5rem);
     font-size: 1rem;
-    color: var(--sections);
     text-transform: uppercase;
     letter-spacing: .7rem;
     font-weight: 100;
+    color: var(--sections);
 }
 
 #skills {
