@@ -41,3 +41,5 @@ I added the color schemes to be directly configurable. Interesting ones:
 - [http://127.0.0.1:3000/#river=#4f0e03;riverside=#531002;land=#581102;header=#e07ca0;tagline=#a36d3e;contacts=#f285ad;sections=#a66f3f;text=#a69c95;skills=#a69c95]
 - [http://127.0.0.1:3000/#river=#6d2417;riverside=#641b0c;land=#530f02;header=#e07ca0;tagline=#a36d3e;contacts=#f285ad;sections=#a66f3f;text=#a69c95;skills=#a69c95]
 - [Orange with pink accents](http://127.0.0.1:3000/#river=#f28706;riverside=#e2812c;land=#c1712c;header=#733b2f;tagline=#bf455c;contacts=#6d3e36;sections=#b34157;text=#270401;skills=#724138)
+- [Burnin' Neon](file:index.html#river=#1e193e;riverside=#000000;land=#480a0a;header=#0a36ee;tagline=#71e714;contacts=#fda830;sections=#71e715;text=#ffcd01;skills=#f33807)
+- [Squishy Jellyfish](file:///Users/ndp/workspace/resume/index.html#river=#000000;riverside=#000000;land=#000000;header=#c324d5;tagline=#1922da;contacts=#fe87ff;sections=#c302d4;text=#fe87ff;skills=#5e10ff)
