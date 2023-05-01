@@ -1,14 +1,12 @@
 (c) Copyright 2023 Andrew J. Peterson. All Rights Reserved.
 
-Throughout my life, my resume has evolved. Orignially a manually-typed page, on to a computerized MSWord document,  to an XML document with varied XSLT transforms, to the most recent version (ironic drum roll): a PDF dump of my LinkedIn page. 
+Like anyone, my resume has evolved throughout my life. Orignially, it was a manually-typed page, and then with the micro-computer revolution, a computerized MSWord document. Nerding out in the 1990s, it became an XML document multiple XSLT transforms. Finally, perhaps exhausted by the whole thing, a fell back to a PDF dump of my LinkedIn page.
 
-LinkedIn is great and all, but their tuning for resume output is anemic. Ideally a resume tool should help create a one-page summary, customized for specific opportunities. (I'm _not_ solving this!) By flooding people with "everything" I was giving people that "I'd done lots of stuff", but it likely wasn't the right answer for most jobs. It was not the quality I usually aim for, and I was letting my occassional scorn for the recruiting process get in my own way. This repo represents an attempt to rectify that.
+LinkedIn is great and all, but their normal (free) resume output is anemic clunky. Ideally a resume tool should help create a one-page summary, customized for specific opportunities. (I'm _not_ solving this!) My LinkedIn "everything" resume I flooded people with did only one thing: giving people the impression that "I'd done lots of stuff". I got by with this, but it likely isn't the right answer for most jobs. Looking back, this "resume" solution was not the quality I usually aim for. And, perhaps too much emotional insight: I was letting my occassional scorn for the recruiting process get in my own way. This repo represents an attempt to rectify that, and provide a better ending for this story.
 
-Technically, I wanted to keep the project as low-tech as possible. I would create a clean HTML document, style it with CSS, and be done. One of my original ideas with an organic-shaped timeline,
-where my experiences were connected via a meandering path,  
-representing my professional journey. The more I developed the idea, the more I realized that the visual design would be a challenging-- too challenging for me to execute gracefully. The meandering shape remains, but I reduced the scope of the idea, and this is a significantly simplified version.
+I decided to create a new resume, hand-crafted like my first resume. I wanted to keep the project as low-tech as possible. I would create a clean HTML document, style it with CSS, and be done. Yeah, I had some cool ideas, like an organic-shaped timeline, where my experiences were connected along a meandering path, representing my professional journey. I tried to develop this idea, but the more I did, the more I realized that the visual design would be a challenging-- too challenging for me to gracefully execute. I like the meandering shape, so I've kept it as a watermark, but I have reduced the scope of the idea, and this is a simplify version.
 
-In my final polish, I was trying out numerous color schemes, and so I decided to make a little interactive tool to let me do this. So there _is_ a little itsy-bitsy bit of Javascript.
+In my final polish, I was trying out numerous color schemes. After switching back between CSS file and browser repeatedly, I decided to make a little interactive tool to let me do this. So there _is_ a little itsy-bitsy bit of Javascript. And then I added one more that let me customize wording for different target audiences. But it is, fundamentally, the low-tech resume I wanted.
 
 ## Usage
 
@@ -17,7 +15,7 @@ Contact me, and I'll send you a PDF!
 To see it locally,
 
 1. check out the code
-2. run some sort of local server
+2. run some sort of local server (or don't)
 3. look at `index.html`
 4. to make a PDF, just make sure page margins are set to 0, and it should just work.
 
